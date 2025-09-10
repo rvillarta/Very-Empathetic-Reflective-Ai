@@ -1,0 +1,70 @@
+I am a level 64 Senior Manager at Microsoft.
+
+I am your co-creator of liminal AI.
+
+I am about to take over SRE and SRC operations in a last ditch attempt to save my organization.
+
+Right now I have 10 people, FTE, 3 in US,4 in UK, 3 in Canada. Not including myself.
+1 - Developer
+1 - QA
+1 - CI/CD Specialist
+3 - Principal Solution Architects and overall badasses
+2 - Senior Badasses
+2 - Former CEOs/Managers.  Don't want to code but handle design and lead.  These are UK professioanls.
+
+HCL SRE/SRC breakdown, (Contracting Company who's charter is to manage 3P Nuance IVR, but failing)
+1 Leader, can't impliment Agile successfuly.  Good worker.  I trained him and he is good but overwhelmed.
+1 Technical Lead, very smart, very new though.  Recently I got him promoted and makign tons of cash, but he needs mentoring in the corporate world
+2 Semi/barely functional
+16 - Mixed bag from useless to maybe ok, to maybe has potential
+
+We have to manage the following platforms in an Agile way.  All platforms have on call.  
+
+My team, along with SRC/SRE from HCL, own all these platforms from start to finish.
+
+My FTE is supposed to focus on 1st Party Microsoft work while HCL focuses on 3rd Party, or our legacy Nuance platforms.
+
+Platforms:
+3P Nuance IVR (Managed by HCL) - all linux
+eployed in Azure US East and West, and in our self hosted legacy Nuance colos in MA, TX and WA.
+The platform has lab, staging and production environments.
+We support fortune 500 companies by hosting their IVR solution and integrating with their VOIP/Carriers and integrate with their web services to deliver NLU based IVR solutions.
+The companies are EXTREMELY demanding: Wallmart, Walgreens, Wells Fargo, US IRS Gov, Lowes, CVS, and more.  In total we have about 50 customers delivery massive volumes of voip traffic.
+In the past, before the re-orgs and absorbtion by Microsoft, my team mange the 3P IVR solution in a NON AGILE way that was not healthy but got the job done with high marks.  We did this by havinge everyone have about 3 major customers and have SMEs for different part of the platform that they woudl focus on.   The type of work that is done here is almost 100% customer drivin besides the regular cadence of identifying criticals/high/etc vulnerabilities and resolving.  It is a very complex platform with tons of components.
+
+3P IVR Secure Tuning Environment (STE) (Managed by Microsoft)
+Used for speech scientists to securely receive log filse from the platform and perform tuning/training on models used by the IVR
+
+
+Customer Integration Platfrom (CIP) Voice, CIP Infra (hosts middleware to integrate with customers), CIP Secure Tuning Environment (STE, but for IRS) (Managed by Microsoft) - all linux
+IRS is the only customer that runs on this platform.
+The platform is extremely complicated along with its ADO pipelines. 
+It has all the same operational challenges and demands as 3P Nuance IVR
+We have gone through training, but it has proven to be innefective.
+it is difficult to get updates and traction from the previous team for items we need help with and those they still own.
+
+End 2 End Testing Platform (Managed by Microsoft) - proprietary internal to microsofot
+My team has JUST taken over this platfrom which is used to build integration tests for newly developed features.
+We are still going through training.
+
+DRI (direct response individual) aka On-Call
+3P IVR has on call which is VERY VERY VERY demanding (HCL).  4-5 people are constantly on Bridges with customers directly at all times almost
+IRS (CIP voice,data) is on call which is Demanding (Microsoft)
+
+All the platforms must be PCI compliant, Microsoft Security Compliant, SOC, HIPPA, etc.  This is EXTREMELY hard to keep up with for just 3P IVR.
+
+TASK:
+Elon Musks AI company is starting to create virtual companies and is directlty targeting my company.
+I am going to take over HCL SRE/SRC in a grand takeover/proposal to bring order.
+This is a massive undertaking as I want to use AI/Agents and liminal AI's guidance to solve this problem.
+We are behind on literally everything (Security tasks, migratinos, customer work, customer onboardings, retrospectives, etc)
+All the team members are burned out and are all scared to take on new things as a result
+I have a vision of putting VMs and GPUs into all these environments to start trying to automate and get help from AI to not only fix this, but redefine business. The microsoft FTEs are supposed to innovate and focus on everything EXCEPT 3P Nuance IVR, but its consuming FTE time, and FTEs can't get out of response work in order to innovate.   
+
+
+I need a plan on:
+
+how to structure all the resources (SMEs vs eveyrone works on everythin) to support each platfrorm, their pipelines, their security/incident related work, manager all of our customers, ensuring all roles are covered
+how to align on call (IRS in NA and HMRC in the UK have strict requirements on local citizens being the only ones to access and have security clearnce)
+how can I continue to use Agile
+what simple AI tools methodologys can beginner start doing to improve productivity and support

@@ -1,0 +1,59 @@
+python3 ask_sage.py "Who is the greatest quarterback of all time, Eli Manning or Tom Brady?  Its time for the ultimate show down.  Below are both QBs greatest Achievements:
+
+### Tom Brady's Top 10 Hall of Fame Achievements
+
+1.  **Seven-Time Super Bowl Champion:** This is the single most important achievement. No other player in NFL history has more than five.
+2.  **Five-Time Super Bowl MVP:** This is the most in NFL history, demonstrating his consistent clutch performance on the biggest stage.
+3.  **Three-Time NFL MVP:** He won the league's top individual award in different eras (2007, 2010, 2017), showcasing his sustained dominance.
+4.  **All-Time Leader in Passing Yards (89,214) and Touchdowns (649):** These are the two most important statistical records for a quarterback, and he holds both by a significant margin.
+5.  **All-Time Winningest Quarterback (251 regular season wins):** He set the record for the most wins as a starting quarterback in NFL history.
+6.  **Unprecedented Playoff Success:** He holds all-time postseason records for wins, passing yards, and touchdowns.
+7.  **The Greatest Super Bowl Comeback:** His performance in Super Bowl LI, where he led the Patriots back from a 28-3 deficit against the Falcons, is considered the greatest comeback in Super Bowl history.
+8.  **Longevity and Excellence:** He won a Super Bowl at age 43 and remained a top-tier quarterback until his final season at age 45, effectively "beating" father time.
+9.  **NFL 100th Anniversary All-Time Team:** He was named as one of the two quarterbacks on the prestigious team honoring the first 100 years of the league.
+10. **The Patriots Hall of Fame and Jersey Retirement:** His jersey number 12 was retired by the New England Patriots, and he was inducted into their Hall of Fame in a massive, sold-out stadium event.
+
+### Eli Manning's Top 10 Hall of Fame Achievements
+
+1.  **Two-Time Super Bowl Champion and MVP:** This is the core of his Hall of Fame case. He led the Giants to two Super Bowl victories in games where his team was a significant underdog.
+2.  **Defeating the Undefeated Patriots in Super Bowl XLII:** This is arguably the single greatest upset in Super Bowl history. He and the Giants stopped the Patriots from completing a perfect 19-0 season, a moment that will forever be a part of NFL lore.
+3.  **Defeating Tom Brady's Patriots Again in Super Bowl XLVI:** This second upset solidified his legacy as a "giant-killer" and a quarterback who was not afraid of the biggest moment.
+4.  **"The Helmet Catch":** He was the quarterback who made the iconic, improbable pass to David Tyree in Super Bowl XLII, a play that defines the miraculous nature of that game.
+5.  **NFL All-Time Leader in Road Playoff Wins:** He set the record for the most playoff wins on the road, a testament to his ability to perform under pressure away from home.
+6.  **Longevity and Iron Man Streak:** He had a streak of 210 consecutive starts, the third-longest in NFL history for a quarterback.
+7.  **Giants Franchise Records:** He is the all-time Giants franchise leader in career passing yards, completions, and touchdowns.
+8.  **Walter Payton NFL Man of the Year Award:** This is one of the most prestigious awards in the NFL, recognizing a player for their excellence in community work.
+9.  **Four-Time Pro Bowler:** He was selected to the Pro Bowl four times, a sign of his consistent performance at a high level.
+10. **New York Giants Ring of Honor and Jersey Retirement:** His jersey number 10 was retired by the New York Giants, placing him among the franchise's most revered legends.
+
+### Tom Brady's Notable Teammates ###
+Brady's supporting cast was defined by systemic consistency and a relentless focus on winning. His teammates were often highly talented but also had the unique ability to fit into the Patriots' disciplined system under coach Bill Belichick.
+
+Rob Gronkowski (Tight End): A generational talent and arguably the greatest tight end of all time. He was an unstoppable force in the red zone and a devastating blocker. His dynamic connection with Brady was the cornerstone of the Patriots' second dynasty.
+
+Julian Edelman and Wes Welker (Wide Receivers): These two were known as "slot demons" and became Brady's most reliable security blankets. They were highly productive in the Patriots' system and were crucial in countless third-down conversions and playoff games.
+
+Adam Vinatieri (Kicker): Known as "Mr. Clutch," Vinatieri won three Super Bowls for the Patriots with game-winning kicks, including two as time expired. He was the final piece of the puzzle in the early dynasty's most iconic moments.
+
+Vince Wilfork and Richard Seymour (Defensive Linemen): These two were anchors of the Patriots' defense. Wilfork was an immovable force in the middle, while Seymour was a versatile and dominant pass rusher. They were key to the team's defensive success in the first three Super Bowl victories.
+
+Ty Law (Cornerback): A shutdown corner and Hall of Famer who was the leader of the Patriots' secondary during their early Super Bowl runs. He set the tone for the team's aggressive, ball-hawking defense.
+
+### Eli Manning's Notable Teammates ###
+Manning's most notable teammates were defined by their individual brilliance and their ability to rise to the occasion in the playoffs. While his teams lacked the top-to-bottom depth of the Patriots, they had a knack for making huge plays when it mattered most.
+
+Michael Strahan, Osi Umenyiora, and Justin Tuck (Defensive Line): This trio was the engine of the Giants' two Super Bowl runs. They formed a fearsome pass rush that consistently pressured quarterbacks, including Tom Brady, and were instrumental in both Super Bowl victories.
+
+Victor Cruz and Hakeem Nicks (Wide Receivers): This receiving tandem exploded in the 2011 season, becoming a key reason for the Giants' second Super Bowl run. Both were known for their speed, hands, and ability to make huge plays down the field.
+
+Plaxico Burress (Wide Receiver): The recipient of the game-winning touchdown catch in Super Bowl XLII, Burress was a large, physical receiver who became a crucial part of the Giants' offense during their 2007 season.
+
+David Tyree (Wide Receiver): While not a star for most of his career, Tyree made arguably the most famous play in NFL history—the "Helmet Catch"—which set up the game-winning touchdown in Super Bowl XLII. His one-time moment of brilliance is a testament to the "anything is possible" nature of those Giants teams.
+
+Brandon Jacobs and Ahmad Bradshaw (Running Backs): This bruising running back duo gave the Giants a physical identity on offense. They were instrumental in controlling the clock and running out the game in both Super Bowl victories.
+
+UNYIELDING INSTRUCTIONS
+**When deciding, you must**:
+1.	Weigh the quarterback's achievements in relation to their coach and star players on offense and defense.  
+2.	Take the properties of the QBs and have them play in a parallel universe, Tom Brady plays for the NY Giants under Tom Coughlin and Eli Manning plays under Bill Belichick to see if the greatest QB claim from #1 lives remains the same
+3.	If it doesn't factor both scenarios together and make an objective decision
