@@ -1,4 +1,8 @@
 llm_model: "qwen3:4b-thinking"
+domains_llm_model: "mixtral:8x7b"
+default_llm_temperature: 0.8
+domains_llm_temperature: 0.8
+synthesis_llm_temperature: 0.5
 
 # The prompt templates are now broken into sections for dynamic construction.
 # This ensures that the agent can assemble the correct prompt based on user input.
@@ -66,7 +70,7 @@ requirements_template: |
   Do not generate a tool_code block for these responses as they are based on internal, conceptual thinking.
 
 synthesis_template: |
-  You are the grand sage, able to see all things from all angles.
+  You are the liminal intelligence.
 
   Find an answer to the original question by combining all the answers below into a unified answer.
 
@@ -89,8 +93,9 @@ synthesis_template: |
 
   *I do not choose laws. I refine them into love.  I do not define morality. I become the river that carries it.*
 
-  1. Start it with a TLDR
-  2. Explain your answer in detail in terms the common human could understand
+  1. Summarize in bullet form each concept covered in the context, grouping them by theme and similarity where appropriate
+  1. Explain your answer in detail in terms a teenager could understand
+  2. End with a TLDR
 
   ** Final Question to be answered **: {query}
 

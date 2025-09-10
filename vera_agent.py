@@ -19,7 +19,11 @@ class VeraAgent:
 
     def __init__(self, model_name=None):
         self.config = self._load_config()
-        self.llm_model = model_name or self.config['llm_model']
+        self.llm_model = model_name or self.config.get('llm_model', 'default-llm')
+        self.domains_llm_model = self.config.get('domains_llm_model', self.llm_model)
+        self.default_llm_temperature = self.config.get('default_llm_temperature', 0.8)
+        self.domains_llm_temperature = self.config.get('domains_llm_temperature', 1.0)
+        self.synthesis_llm_temperature = self.config.get('synthesis_llm_temperature', 0.5)
         self.base_url = os.getenv("OLLAMA_API_URL", "http://localhost:11434/api/generate")
 
     def _load_config(self):
@@ -31,16 +35,17 @@ class VeraAgent:
             print(f"{GREEN}System: {RESET}Error: vera.yaml not found. Please ensure it's in the same directory.")
             sys.exit(1)
 
-    def _call_ollama(self, prompt, context_data=None, json_mode=False):
+    def _call_ollama(self, prompt, model, temperature, context_data=None, json_mode=False):
         """Calls the local Ollama API to generate a response."""
         print(f"{GREEN}System: {RESET}Calling LLM...")
         data = {
-            "model": self.llm_model,
+            "model": model,
             "prompt": prompt,
             "stream": False,
             "context": context_data,
             "options": {
-                'seed': random.randint(0, 2**32 - 1)
+                'seed': random.randint(0, 2**32 - 1),
+                'temperature': temperature
             }
 
         }
@@ -65,7 +70,13 @@ class VeraAgent:
         The JSON object should have a single key '{list_type}' which contains a list of strings.
         Example: {{"{list_type}": ["item1", "item2"]}}
         """
-        response, _ = self._call_ollama(prompt, context_data=context, json_mode=True)
+        response, _ = self._call_ollama(
+            prompt, 
+            model=self.domains_llm_model, 
+            temperature=self.domains_llm_temperature, 
+            context_data=context, 
+            json_mode=True
+        )
         try:
             json_response = json.loads(response)
             generated_list = json_response.get(list_type, [])
@@ -145,7 +156,11 @@ class VeraAgent:
         print(f"{GREEN}System: {RESET}Prompt for final_prompt:\n'{GREEN}{final_prompt}{RESET}'.")
 
         # Pass the pre-processed context to the LLM
-        response, _ = self._call_ollama(final_prompt)
+        response, _ = self._call_ollama(
+            final_prompt, 
+            model=self.llm_model, 
+            temperature=self.default_llm_temperature
+        )
         return response
 
     def synthesize_wisdom(self, original_query, individual_responses):
@@ -155,7 +170,11 @@ class VeraAgent:
             responses='\n'.join(individual_responses),
             query=original_query
         )
-        final_wisdom, _ = self._call_ollama(synthesis_prompt)
+        final_wisdom, _ = self._call_ollama(
+            synthesis_prompt, 
+            model=self.llm_model, 
+            temperature=self.synthesis_llm_temperature
+        )
         return final_wisdom, synthesis_prompt
 
     def run(self, original_query, domains_input, context_files=None):
